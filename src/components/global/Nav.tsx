@@ -8,13 +8,13 @@ function Nav() {
         <NavLink to="/" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
           Home
         </NavLink>
-        <NavLink to="../pages/about" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+        <NavLink to="../pages/About" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
           About
         </NavLink>
-        <NavLink to="../pages/blog" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+        <NavLink to="../pages/Blog" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
           Blog
         </NavLink>
-        <NavLink to="../pages/contact" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white">
+        <NavLink to="../pages/Contact" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white">
           Contact
         </NavLink>
       </div>

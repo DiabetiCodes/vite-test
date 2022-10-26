@@ -13,13 +13,13 @@ function Footer() {
               <NavLink to="#" className="mr-4 hover:underline md:mr-6 ">Home</NavLink>
           </li>
           <li>
-              <NavLink to="#" className="mr-4 hover:underline md:mr-6">About</NavLink>
+              <NavLink to="../pages/About" className="mr-4 hover:underline md:mr-6">About</NavLink>
           </li>
           <li>
-              <NavLink to="#" className="mr-4 hover:underline md:mr-6">Blog</NavLink>
+              <NavLink to="../pages/Blog" className="mr-4 hover:underline md:mr-6">Blog</NavLink>
           </li>
           <li>
-              <NavLink to="#" className="hover:underline">Contact</NavLink>
+              <NavLink to="../pages/Contact" className="hover:underline">Contact</NavLink>
           </li>
       </ul>
     </footer>
