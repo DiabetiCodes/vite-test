@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import Nav from './global/Nav'
 import Logo from '../../src/assets/react.svg'
 
@@ -6,9 +7,9 @@ function Header() {
   return (
     <nav className='flex items-center justify-between flex-wrap bg-teal-500 p-6'>
       <div className='flex items-left flex-shrink-0 text-white mr-6'>
-        <img 
-          src={Logo}
-        />
+        <NavLink to='/'>
+          <img src={Logo} alt='Site Logo'/>
+        </NavLink>
       </div>
       <div className='block lg:hidden'>
         <button className='flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white'>
