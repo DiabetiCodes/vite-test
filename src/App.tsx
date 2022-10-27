@@ -1,6 +1,6 @@
-import * as React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Header from './components/Header'
+import Layout from './components/Layout'
 import Footer from './components/Footer'
 
 import Home from './pages/Home'
@@ -11,29 +11,16 @@ import Contact from './pages/Contact'
 import './App.css'
 
 function App() {
-
-  let component;
-
-  switch(window.location.pathname){
-    case '/':
-      component = <Home />
-      break
-    case '/About':
-      component = <About />
-      break
-      case '/Blog':
-        component = <Blog />
-        break
-      case '/Contact':
-        component = <Contact />
-        break
-  }
-
   return (
     <div className="App">
-      <Header/>
-      {component}
-      <Footer/>
+      <Layout />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
     </div>
   )
 }
