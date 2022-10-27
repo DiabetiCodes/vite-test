@@ -1,7 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
-import Layout from './components/Layout'
-import Footer from './components/Footer'
+import Layout from './components/global/Layout'
+import Footer from './components/global/Footer'
 
 import Home from './pages/Home'
 import About from './pages/About'
