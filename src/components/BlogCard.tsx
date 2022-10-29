@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function BlogCard() {
   return (
     <div className='max-w-lg mx-auto'>

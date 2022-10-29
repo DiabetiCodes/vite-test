@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
+import { faker } from '@faker-js/faker';
 
 function Layout() {
   return (
     <nav className='bg-teal-500 drop-shadow-sm'>
       <div className='max-w-screen-2xl flex items-center justify-between flex-wrap bg-teal-500 p-6 mx-auto'>
-        <div className='flex items-center flex-shrink-0 text-white mr-6 bg-teal-500'>
+        <div className='flex items-center flex-shrink-0 text-white mr-6 bg-teal-500 font-bold'>
           <Link to='/'>
-            LOGO
+            {faker.company.name()}
           </Link>
         </div>
         <div className='block md:hidden'>
