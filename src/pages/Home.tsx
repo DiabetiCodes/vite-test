@@ -4,8 +4,6 @@ import Graph from '../assets/images/graph.svg';
 import People from '../assets/images/people.svg';
 import Plane from '../assets/images/plane.svg';
 
-export default function Home() {
-
   //Tailwind color options
   const colors = [
     'amber', 'blue', 'cyan', 'emerald', 'fuchsia', 'gray',
@@ -20,12 +18,13 @@ export default function Home() {
   ]
 
   //Select random color from colorArray, store generated value
-  let randomColor = colors[Math.floor(Math.random() * colors.length)]
-  let randomValue = values[Math.floor(Math.random() * values.length)]
+  let randColor = colors[Math.floor(Math.random() * colors.length)]
+  let randVal = values[Math.floor(Math.random() * values.length)]
 
-  const customColor = 'bg-' + randomColor + '-' + randomValue;
+  //Need to find a way to apply this as a custom and COMPLETE CSS class so Tailwind doesn't strip it
+  const newColor = 'bg=' + randColor + '-' + randVal
 
-  console.log(customColor)
+export default function Home() {
 
   return (
     <>
@@ -49,7 +48,7 @@ export default function Home() {
               <div className='mt-6'>
                 <Link
                   to='/'
-                  className={`inline-block px-3 py-2 font-semibold text-center text-white transition-colors duration-200 transform md:shadow-md  hover:dark:bg-gray-800 ${customColor}`}
+                  className={`inline-block px-3 py-2 font-semibold text-center text-white transition-colors duration-200 transform md:shadow-md  hover:dark:bg-gray-800 bg-${randColor}-${randVal}`}
                 >
                   Get Started
                 </Link>
