@@ -15,17 +15,17 @@ import FormWidget from '../components/FormWidget';
     'teal', 'violet', 'yellow', 'zinc',
   ];
 
-  //Tailwind color values
-  const values = [
-    100, 200, 300, 400, 500, 600, 700, 800, 900
-  ]
+//Tailwind color values
+const values = [
+  100, 200, 300, 400, 500, 600, 700, 800, 900
+]
 
-  //Select random color from colorArray, store generated value
-  let randColor = colors[Math.floor(Math.random() * colors.length)]
-  let randVal = values[Math.floor(Math.random() * values.length)]
+//Select random color from colorArray, store generated value
+let randColor = colors[Math.floor(Math.random() * colors.length)]
+let randVal = values[Math.floor(Math.random() * values.length)]
 
-  //Need to find a way to apply this as a custom and COMPLETE CSS class so Tailwind doesn't strip it
-  const newColor = 'bg-' + randColor + '-' + randVal
+//Need to find a way to apply this as a custom and COMPLETE CSS class so Tailwind doesn't strip it
+const newColor = 'bg-' + randColor + '-' + randVal
 
 export default function Home() {
   return (
