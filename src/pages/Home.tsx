@@ -25,7 +25,7 @@ import FormWidget from '../components/FormWidget';
   let randVal = values[Math.floor(Math.random() * values.length)]
 
   //Need to find a way to apply this as a custom and COMPLETE CSS class so Tailwind doesn't strip it
-  const newColor = 'bg=' + randColor + '-' + randVal
+  const newColor = 'bg-' + randColor + '-' + randVal
 
 export default function Home() {
   return (
@@ -50,7 +50,7 @@ export default function Home() {
               <div className='mt-6'>
                 <Link
                   to='/'
-                  className={`inline-block px-3 py-2 font-semibold text-center text-white transition-colors duration-200 transform md:shadow-md  hover:dark:bg-amber-500 bg-teal-500`}
+                  className={`inline-block px-3 py-2 font-semibold text-center text-white transition-colors duration-200 transform md:shadow-md  hover:dark:bg-amber-500 ${newColor}`}
                 >
                   Get Started
                 </Link>
