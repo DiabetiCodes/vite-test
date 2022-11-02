@@ -7,25 +7,25 @@ import Plane from '../assets/images/plane.svg';
 import BlogTeaser from '../components/BlogTeaser';
 import FormWidget from '../components/FormWidget';
 
-  //Tailwind color options
-  const colors = [
-    'amber', 'blue', 'cyan', 'emerald', 'fuchsia', 'gray',
-    'green', 'indigo', 'lime', 'neutral', 'orange', 'pink',
-    'purple', 'red', 'rose', 'sky', 'slate', 'stone',
-    'teal', 'violet', 'yellow', 'zinc',
-  ];
+//   Tailwind color options
+//   const colors = [
+//     'amber', 'blue', 'cyan', 'emerald', 'fuchsia', 'gray',
+//     'green', 'indigo', 'lime', 'neutral', 'orange', 'pink',
+//     'purple', 'red', 'rose', 'sky', 'slate', 'stone',
+//     'teal', 'violet', 'yellow', 'zinc',
+//   ];
 
-//Tailwind color values
-const values = [
-  100, 200, 300, 400, 500, 600, 700, 800, 900
-]
+// Tailwind color values
+// const values = [
+//   100, 200, 300, 400, 500, 600, 700, 800, 900
+// ]
 
-//Select random color from colorArray, store generated value
-let randColor = colors[Math.floor(Math.random() * colors.length)]
-let randVal = values[Math.floor(Math.random() * values.length)]
+// Select random color from colorArray, store generated value
+// let randColor = colors[Math.floor(Math.random() * colors.length)]
+// let randVal = values[Math.floor(Math.random() * values.length)]
 
-//Need to find a way to apply this as a custom and COMPLETE CSS class so Tailwind doesn't strip it
-const newColor = 'bg-' + randColor + '-' + randVal
+// Need to find a way to apply this as a custom and COMPLETE CSS class so Tailwind doesn't strip it
+// const newColor = 'bg-' + randColor + '-' + randVal
 
 export default function Home() {
   return (
@@ -50,7 +50,7 @@ export default function Home() {
               <div className='mt-6'>
                 <Link
                   to='/'
-                  className={`inline-block px-3 py-2 font-semibold text-center text-white transition-colors duration-200 transform md:shadow-md  hover:dark:bg-amber-500 ${newColor}`}
+                  className='inline-block px-3 py-2 font-semibold text-center text-white transition-colors duration-200 transform md:shadow-md  hover:dark:bg-amber-500 bg-teal-500'
                 >
                   Get Started
                 </Link>
