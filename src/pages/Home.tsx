@@ -7,7 +7,7 @@ import Plane from '../assets/images/plane.svg';
 import BlogTeaser from '../components/BlogTeaser';
 import FormWidget from '../components/FormWidget';
 
-//   Tailwind color options
+// //   Tailwind color options
 //   const colors = [
 //     'amber', 'blue', 'cyan', 'emerald', 'fuchsia', 'gray',
 //     'green', 'indigo', 'lime', 'neutral', 'orange', 'pink',
@@ -15,17 +15,18 @@ import FormWidget from '../components/FormWidget';
 //     'teal', 'violet', 'yellow', 'zinc',
 //   ];
 
-// Tailwind color values
+// // Tailwind color values
 // const values = [
 //   100, 200, 300, 400, 500, 600, 700, 800, 900
 // ]
 
-// Select random color from colorArray, store generated value
+// // Select random color from colorArray, store generated value
 // let randColor = colors[Math.floor(Math.random() * colors.length)]
 // let randVal = values[Math.floor(Math.random() * values.length)]
 
-// Need to find a way to apply this as a custom and COMPLETE CSS class so Tailwind doesn't strip it
 // const newColor = 'bg-' + randColor + '-' + randVal
+
+// console.log(newColor)
 
 export default function Home() {
   return (
@@ -86,8 +87,10 @@ export default function Home() {
         <h1 className='text-3xl text-center mb-4 text-teal-800 capitalize'>{faker.company.catchPhrase()}</h1>
         <p className='text-center'>{faker.lorem.paragraphs(5)}</p>
       </div>
-
-      <BlogTeaser />
+      <div className='pattern-dots pattern-gray-200 pattern-bg-transparent pattern-opacity-100 pattern-size-2 pt-8'>
+        <h1 className='text-3xl text-center mb-4 text-teal-800 capitalize'>{faker.company.catchPhrase()}</h1>
+        <BlogTeaser />
+      </div>
       <FormWidget />
     </>
   );
