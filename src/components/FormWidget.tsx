@@ -16,7 +16,7 @@ export default function FormWidget() {
               className='appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'
               id='grid-first-name'
               type='text'
-              placeholder='Jane'
+              placeholder='John'
             />
             <p className='text-red-500 text-xs italic'>
               Please fill out this field.
@@ -34,11 +34,11 @@ export default function FormWidget() {
               focus:outline-none focus:bg-white focus:border-gray-500'
               id='grid-last-name'
               type='text'
-              placeholder='Doe'
+              placeholder='Smith'
             />
           </div>
         </div>
-        <div className='flex flex-wrap -mx-3 mb-2'>
+        <div className='flex flex-wrap -mx-3 mb-8'>
           <div className='w-full md:w-1/3 px-3 mb-6 md:mb-0'>
             <label
               className='block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2'
@@ -66,9 +66,56 @@ export default function FormWidget() {
                 className='block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
                 id='grid-state'
               >
-                <option>New Mexico</option>
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Arizona</option>
+                <option>Arkansas</option>
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Delaware</option>
+                <option>Florida</option>
+                <option>Georgia</option>
+                <option>Hawaii</option>
+                <option>Idaho</option>
+                <option>Illinois</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+                <option>Kansas</option>
+                <option>Kentucky</option>
+                <option>Louisiana</option>
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option>Massachusetts</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Mississippi</option>
                 <option>Missouri</option>
+                <option>Montana</option>
+                <option>Nebraska</option>
+                <option>Nevada</option>
+                <option>New Hampshire</option>
+                <option>New Jersey</option>
+                <option>New Mexico</option>
+                <option>New York</option>
+                <option>North Carolina</option>
+                <option>North Dakota</option>
+                <option>Ohio</option>
+                <option>Oklahoma</option>
+                <option>Oregon</option>
+                <option>Pennsylvania</option>
+                <option>Rhode Island</option>
+                <option>South Carolina</option>
+                <option>South Dakota</option>
+                <option>Tennessee</option>
                 <option>Texas</option>
+                <option>Utah</option>
+                <option>Vermont</option>
+                <option>Virginia</option>
+                <option>Washington</option>
+                <option>West Virginia</option>
+                <option>isconsin</option>
+                <option>Wyoming</option>
               </select>
               <div className='pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700'>
                 <svg
@@ -98,11 +145,11 @@ export default function FormWidget() {
           </div>
         </div>
         <Link
-          className='text-white bg-teal-500 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 font-medium rounded-lg text-sm px-3 py-2
+          className='text-white bg-teal-500 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 font-medium text-sm px-8 py-4
           text-center inline-flex items-center'
           to='#'
         >
-          Read more
+          Submit
         </Link>
       </form>
     </div>

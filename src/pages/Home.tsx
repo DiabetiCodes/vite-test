@@ -6,31 +6,11 @@ import Plane from '../assets/images/plane.svg';
 
 import BlogTeaser from '../components/BlogTeaser';
 import FormWidget from '../components/FormWidget';
-
-// //   Tailwind color options
-//   const colors = [
-//     'amber', 'blue', 'cyan', 'emerald', 'fuchsia', 'gray',
-//     'green', 'indigo', 'lime', 'neutral', 'orange', 'pink',
-//     'purple', 'red', 'rose', 'sky', 'slate', 'stone',
-//     'teal', 'violet', 'yellow', 'zinc',
-//   ];
-
-// // Tailwind color values
-// const values = [
-//   100, 200, 300, 400, 500, 600, 700, 800, 900
-// ]
-
-// // Select random color from colorArray, store generated value
-// let randColor = colors[Math.floor(Math.random() * colors.length)]
-// let randVal = values[Math.floor(Math.random() * values.length)]
-
-// const newColor = 'bg-' + randColor + '-' + randVal
-
-// console.log(newColor)
+import Randomizer from '../components/global/Randomizer';
 
 export default function Home() {
   return (
-    <>
+    <div>
       <div className='bg-gray-200'>
         <div className='container px-6 py-4 mx-auto lg:flex lg:h-128 lg:py-16 '>
           <div className='flex items-center justify-center w-full mt-2 lg:h-96 lg:w-1/2 order-1 bg-gray-200' >
@@ -91,7 +71,19 @@ export default function Home() {
         <h1 className='text-3xl text-center mb-4 text-teal-800 capitalize'>{faker.company.catchPhrase()}</h1>
         <BlogTeaser />
       </div>
-      <FormWidget />
-    </>
+      <div className='container px-6 py-4 mx-auto lg:flex lg:h-128 lg:py-16 '>
+        <div className='flex items-center justify-center w-full mt-2 lg:h-96 lg:w-1/2 lg:order-2' >
+          <FormWidget />
+        </div>
+        <div className='lg:flex items-center justify-center w-full mt-2 lg:h-96 lg:w-1/2 lg:order-1 hidden' >
+        <img
+              className='object-cover w-full max-w-2xl rounded-md lg:h-full md:shadow-md bg-gray-200'
+              src={faker.image.business()}
+              alt={faker.lorem.words(5)}
+            />
+          
+        </div>
+      </div>
+    </div>
   );
 }

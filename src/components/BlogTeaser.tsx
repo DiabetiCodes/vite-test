@@ -9,7 +9,7 @@ export default function BlogTeaser() {
           <div className='bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5'>
             <Link to='#'>
               <img
-                className='object-cover w-full max-w-2xl rounded-md lg:h-full md:shadow-md bg-gray-200'
+                className='object-cover w-full max-w-2xl lg:h-full md:shadow-md bg-gray-200'
                 src={faker.image.abstract()}
                 alt={faker.lorem.words(5)}
               />
@@ -24,7 +24,7 @@ export default function BlogTeaser() {
                 {faker.lorem.sentence(10)}
               </p>
               <Link
-                className='text-white bg-teal-500 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center capitalize'
+                className='text-white bg-teal-500 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 font-medium text-sm px-3 py-2 text-center inline-flex items-center capitalize'
                 to='#'
               >
                 Read more
@@ -38,7 +38,7 @@ export default function BlogTeaser() {
           <div className='bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5'>
             <Link to='#'>
               <img
-                className='object-cover w-full max-w-2xl rounded-md lg:h-full md:shadow-md bg-gray-200'
+                className='object-cover w-full max-w-2xl lg:h-full md:shadow-md bg-gray-200'
                 src={faker.image.abstract()}
                 alt={faker.lorem.words(5)}
               />
@@ -53,7 +53,7 @@ export default function BlogTeaser() {
                 {faker.lorem.sentence(10)}
               </p>
               <Link
-                className='text-white bg-teal-500 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center'
+                className='text-white bg-teal-500 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 font-medium text-sm px-3 py-2 text-center inline-flex items-center'
                 to='#'
               >
                 Read more
@@ -67,7 +67,7 @@ export default function BlogTeaser() {
           <div className='bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5'>
             <Link to='#'>
               <img
-                className='object-cover w-full max-w-2xl rounded-md lg:h-full md:shadow-md bg-gray-200'
+                className='object-cover w-full max-w-2xl lg:h-full md:shadow-md bg-gray-200'
                 src={faker.image.abstract()}
                 alt={faker.lorem.words(5)}
               />
@@ -82,7 +82,7 @@ export default function BlogTeaser() {
                 {faker.lorem.sentence(10)}
               </p>
               <Link
-                className='text-white bg-teal-500 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center'
+                className='text-white bg-teal-500 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 font-medium text-sm px-3 py-2 text-center inline-flex items-center'
                 to='#'
               >
                 Read more
