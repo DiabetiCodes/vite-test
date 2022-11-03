@@ -8,6 +8,11 @@ import BlogTeaser from '../components/BlogTeaser';
 import FormWidget from '../components/FormWidget';
 import Randomizer from '../components/global/Randomizer';
 
+let newColor = Randomizer();
+
+console.log(newColor);
+
+
 export default function Home() {
   return (
     <div>

@@ -1,5 +1,5 @@
-
-//   Tailwind color options
+export default function Randomizer() {
+    //   Tailwind color options
   const colors = [
     '#f1f5f9', '#e2e8f0', '#cbd5e1', '#94a3b8', '#64748b', '#475569', '#334155', '#1e293b', '#0f172a',
     '#f3f4f6', '#e5e7eb', '#d1d5db', '#9ca3af', '#6b7280', '#4b5563', '#374151', '#1f2937', '#111827',
@@ -25,12 +25,10 @@
     '#ffe4e6', '#fecdd3', '#fda4af', '#fb7185', '#f43f5e', '#e11d48', '#be123c', '#9f1239', '#881337',
   ];
 
-// Select random color from colorArray, store generated value
-let randomColor = colors[Math.floor(Math.random() * colors.length)]
+  // Select random color from colorArray, store generated value
+  let randomColor = colors[Math.floor(Math.random() * colors.length)]
 
-console.log(randomColor)
-
-export default function Randomizer() {
-  return (
+  return(
     
   )
+}
