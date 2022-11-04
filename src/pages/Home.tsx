@@ -12,13 +12,14 @@ let newColor = Randomizer();
 
 console.log(newColor);
 
+//style={{ backgroundColor: `${newColor}` }}
 
 export default function Home() {
   return (
     <div>
       <div className='bg-gray-200'>
         <div className='container px-6 py-4 mx-auto lg:flex lg:h-128 lg:py-16 '>
-          <div className='flex items-center justify-center w-full mt-2 lg:h-96 lg:w-1/2 order-1 bg-gray-200' >
+          <div className='flex items-center justify-center w-full mt-2 lg:h-96 lg:w-1/2 order-1'>
             <img
               className='object-cover w-full max-w-2xl rounded-md lg:h-full md:shadow-md bg-gray-200'
               src={faker.image.abstract()}
@@ -36,7 +37,7 @@ export default function Home() {
               <div className='mt-6'>
                 <Link
                   to='/'
-                  className='inline-block px-3 py-2 font-semibold text-center text-white transition-colors duration-200 transform md:shadow-md  hover:dark:bg-amber-500 bg-teal-500'
+                  className='inline-block px-3 py-2 font-semibold text-center text-white transition-colors duration-200 transform md:shadow-md  hover:dark:bg-amber-500' style={{ backgroundColor: `${newColor}` }}
                 >
                   Get Started
                 </Link>

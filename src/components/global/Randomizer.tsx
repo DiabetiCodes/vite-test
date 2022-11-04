@@ -29,6 +29,6 @@ export default function Randomizer() {
   let randomColor = colors[Math.floor(Math.random() * colors.length)]
 
   return(
-    
+    {randomColor}
   )
 }
