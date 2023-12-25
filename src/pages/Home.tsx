@@ -1,5 +1,5 @@
-import { Form, Link } from 'react-router-dom';
 import { faker } from '@faker-js/faker';
+import { Form, Link } from 'react-router-dom';
 import Graph from '../assets/images/graph.svg';
 import People from '../assets/images/people.svg';
 import Plane from '../assets/images/plane.svg';

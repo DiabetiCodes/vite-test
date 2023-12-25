@@ -25,10 +25,16 @@ export default function Randomizer() {
     '#ffe4e6', '#fecdd3', '#fda4af', '#fb7185', '#f43f5e', '#e11d48', '#be123c', '#9f1239', '#881337',
   ];
 
+  //TODO
+  // make color family array
+  //make color arrays within color family array
+  //write randomizer to randomize families
+  //write second randomizer to randomize colors within families
+
   // Select random color from colorArray, store generated value
   let randomColor = colors[Math.floor(Math.random() * colors.length)]
 
   return(
-    {randomColor}
+    randomColor
   )
 }
